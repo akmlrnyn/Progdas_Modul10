@@ -21,12 +21,12 @@ void vigenereDecrypt(char *ciphertext, char *key) {
 }
 
 int main() {
-    char ciphertext[] = "!gsaH xinH ,fmaskgW rudT"; //Pesan Enkripsi
-    char key[] = "tempkey";
+    char message[] = "rey txs qb xztwxgnvotB rciS"; //Pesan Enkripsi
+    char *key = "tempkey"; 
 
-    printf("Encypted Text : %s\n", ciphertext);
-    vigenereDecrypt(ciphertext, key);
-    printf("Deciphered : %s\n", ciphertext);
+    printf("Encypted Text : %s\n", message);
+    vigenereDecrypt(message, key);
+    printf("Deciphered : %s\n", message);
 
     return 0;
 }
